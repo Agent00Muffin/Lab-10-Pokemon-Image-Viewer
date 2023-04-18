@@ -5,6 +5,7 @@ import requests
 import ctypes
  
 def main():
+    # make something to test the functions
     return
  
 def download_image(image_url):

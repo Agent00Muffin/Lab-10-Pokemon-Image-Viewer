@@ -41,6 +41,14 @@ cbox_poke_names.set("Select a Pokémon")
 cbox_poke_names.grid(padx=10, pady=10, row=1, column=0)
 
 def handle_pokemon_sel(event):
+    """Gets the pokemon image, downloads associated artwork, enable the button
+ 
+    Args:
+        
+ 
+    Returns:
+        
+    """
     # Get the name of the selected pokemon
     pokemon_name = cbox_poke_names.get()
     # Download and save the art for the selected pokemon
@@ -55,6 +63,14 @@ def handle_pokemon_sel(event):
 cbox_poke_names.bind('<<ComboboxSelected>>', handle_pokemon_sel)
 
 def set_background():
+    """sets the desktop background
+ 
+    Args:
+        
+ 
+    Returns:
+        
+    """
     return image_lib.set_desktop_background_image(image_path)
 
 # Add desktop image button

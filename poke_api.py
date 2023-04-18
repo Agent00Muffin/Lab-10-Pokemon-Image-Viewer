@@ -39,7 +39,14 @@ def get_pokemon_info(pokemon_name):
         return
     
 def get_pokemon_names(offset=0, limit=100000):
-    
+    """Gets the pokemon name
+ 
+    Args:
+        
+ 
+    Returns:
+        
+    """
     query_str_params = {
         'offset' : offset,
         'limit' : limit
@@ -61,7 +68,14 @@ def get_pokemon_names(offset=0, limit=100000):
         return
 
 def download_pokemon_artwork(pokemon_name, save_dir):
-
+    """Gets the pokemon official artwork
+ 
+    Args:
+        
+ 
+    Returns:
+        
+    """
     # Get all info for the specified pokemon
     pokemon_info = get_pokemon_info(pokemon_name)
     if pokemon_info is None:
